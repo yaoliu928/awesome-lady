@@ -1,0 +1,43 @@
+.bg-circles {
+  z-index: -1;
+  @include absolute-full-block;
+  div {
+    height: 60px;
+    width: 60px;
+    border: 2px solid $theme-pink-light;
+    border-radius: 50%;
+    position: absolute;
+    &:nth-child(1) {
+      top: -20%;
+      left: -20%;
+      animation: move 8s linear infinite;
+    }
+    &:nth-child(2) {
+      top: -15%;
+      left: -15%;
+      animation: move 5s linear infinite;
+    }
+    &:nth-child(3) {
+      bottom: -15%;
+      right: -15%;
+      animation: move 8s linear infinite;
+    }
+    &:nth-child(4) {
+      bottom: -10%;
+      right: -10%;
+      animation: move 5s linear infinite;
+    }
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: scale(1) translateX(0) translateY(0);
+  }
+  50% {
+    transform: scale(1.2) translateX(10px) translateY(10px);
+  }
+  100% {
+    transform: scale(1) translateX(0) translateY(0);
+  }
+}

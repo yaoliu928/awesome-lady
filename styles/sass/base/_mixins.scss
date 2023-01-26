@@ -1,0 +1,43 @@
+@mixin center-horizontal {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin center-vertical {
+  display: flex;
+  align-items: center;
+}
+
+@mixin center-horizontal-vertical {
+  @include center-horizontal;
+  align-items: center;
+}
+
+@mixin pointer {
+  cursor: pointer;
+}
+
+@mixin absolute-full-block {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+}
+
+@mixin bg-gradient($colorStart, $colorEnd) {
+  background: linear-gradient(to bottom right, $colorStart, $colorEnd);
+}
+
+@mixin slogan($width) {
+  @keyframes expanding {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: $width;
+    }
+    100% {
+      width: 0;
+    }
+  }
+}

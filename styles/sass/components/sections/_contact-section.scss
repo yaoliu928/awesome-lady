@@ -1,0 +1,22 @@
+.contact {
+  background-color: $black;
+  color: $white;
+  @include center-horizontal-vertical;
+  flex-direction: column;
+  margin-top: 40px;
+  padding: 90px 0;
+  &-content-wrapper {
+    justify-content: space-around;
+    width: 80%;
+  }
+}
+
+.map {
+  border-radius: 10px;
+}
+
+.contact-info {
+  @include center-horizontal;
+  flex-direction: column;
+  color: $off-white;
+}

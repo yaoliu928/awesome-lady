@@ -1,0 +1,61 @@
+.activity {
+  min-height: 700px;
+}
+
+.activity-card {
+  min-height: 350px;
+  padding: 30px;
+  transition: transform 0.6s ease-in-out;
+  &:hover {
+    transform: translateY(-8px);
+    & .activity-card-icon {
+      animation: shake 0.6s linear;
+    }
+  }
+  i {
+    @include center-horizontal-vertical;
+  }
+}
+
+.activity-card-icon {
+  @include bg-gradient($theme-pink, $theme-velvet);
+  color: $white;
+  font-size: 30px;
+  margin: 10px 0 40px;
+  border-top-left-radius: 55% 40%;
+  border-top-right-radius: 35% 40%;
+  border-bottom-right-radius: 48% 70%;
+  border-bottom-left-radius: 30% 6%;
+  width: 50px;
+  height: 50px;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(15deg);
+  }
+  30% {
+    transform: rotate(-15deg);
+  }
+  40% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  60% {
+    transform: rotate(10deg);
+  }
+  70% {
+    transform: rotate(-15deg);
+  }
+  85% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

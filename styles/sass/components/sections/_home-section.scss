@@ -1,0 +1,42 @@
+.home {
+  margin-top: 62px;
+  color: $white;
+}
+
+.mask {
+  @include absolute-full-block;
+  @include center-horizontal-vertical;
+  background: $mask-bg;
+  z-index: 1;
+  flex-direction: column;
+}
+
+.top-heading {
+  text-align: center;
+  font-size: 50px;
+  width: 60%;
+}
+
+.slogan-container {
+  @include center-horizontal;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: expanding 3s linear infinite;
+  font-size: 18px;
+  color: $white;
+}
+
+.more-info {
+  background: $white;
+  color: $grey;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 20px;
+  padding: 10px 20px;
+  &:hover {
+    color: $dark-grey;
+    @include pointer;
+  }
+}
+
+@include slogan(25%);

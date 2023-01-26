@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  li {
+    list-style: none;
+  }
+}
+
+.second-heading {
+  color: $theme-pink;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.third-heading {
+  color: $theme-pink;
+  margin-bottom: 30px;
+}
+
+.section-container {
+  height: 100vh;
+  @include center-horizontal-vertical;
+  flex-direction: column;
+}
+
+.cards-wrapper,
+.content-wrapper {
+  display: flex;
+}
+
+.base-card {
+  margin: 20px;
+  box-shadow: $box-shadow;
+  border-radius: 10px;
+  max-width: 300px;
+}

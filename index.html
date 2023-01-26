@@ -11,263 +11,254 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing Script">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-
-  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./styles/css/style.css" />
   <script defer src="https://code.jquery.com/jquery-3.6.3.min.js"
     integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
   <script defer src="https://kit.fontawesome.com/6e614269da.js" crossorigin="anonymous"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
-  <script src="./script.js" defer></script>
+  <script src="./scripts/script.js" defer></script>
 </head>
 
 <body>
-  <header>
-    <nav id="mainNavbar" class="navbar fixed-top navbar-expand-lg bg-light">
-      <div class="container-fluid">
-        <div class="navbar-brand header__logo">
-          <img src="./assets/icons/woman-clothes.png" alt="logo image">
-          <span class="header__name">AWESOME LADY</span>
-        </div>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
-          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="header__menu collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class=" navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item" id="navHome">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item" id="navAbout">
-              <a class="nav-link" href="#">About Us</a>
-            </li>
-            <li class="nav-item" id="navActivity">
-              <a class="nav-link" href="#">Activity</a>
-            </li>
-            <li class="nav-item" id="navPortfolio">
-              <a class="nav-link" href="#">Portfolio</a>
-            </li>
-            <li class="nav-item" id="navContact">
-              <a class="nav-link " href="#">Contact</a>
-            </li>
-          </ul>
-
-        </div>
+  <nav id="navbar" class="navbar fixed-top navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <div class="navbar-brand">
+        <img src="./assets/icons/woman-clothes.png" alt="logo image" width="20">
+        <span class="logo-text">AWESOME LADY</span>
       </div>
-    </nav>
-  </header>
-  <section id="home" class="home">
-    <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="1500">
-          <img src="./assets/images/home/armen-aydinyan-bhJfx7t4QUA-unsplash.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item" data-bs-interval="1500">
-          <img src="./assets/images/home/michael-lee-5Z9bgfRZLLE-unsplash.jpg" class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item" data-bs-interval="1500">
-          <img src="./assets/images/home/raden-prasetya-EvjmSg1xurI-unsplash.jpg" class="d-block w-100" alt="...">
-        </div>
-      </div>
-
-      <div class="home__text">
-        <h1 class="home__heading">Welcome to Join Awesome Lady Model Team</h1>
-        <div class="home__slogan-container">
-          <p class="home__slogan">Everyone can be a model...</p>
-        </div>
-        <a id="moreInfo" class="home__link">More Info</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
+        aria-controls="navbar-toggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar-toggler">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item" id="nav-home">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item" id="nav-about">
+            <a class="nav-link" href="#about">About Us</a>
+          </li>
+          <li class="nav-item" id="nav-activity">
+            <a class="nav-link" href="#activity">Activity</a>
+          </li>
+          <li class="nav-item" id="nav-portfolio">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item" id="nav-contact">
+            <a class="nav-link " href="#contact">Contact</a>
+          </li>
+        </ul>
       </div>
     </div>
-  </section>
-  <section id="about" class="about">
-    <div class="about__content-wrapper">
-      <div class="about__img">
-        <img src="./assets/images/about/portrait.png" alt="">
-      </div>
-      <div class="about__text">
-        <h2>About Us</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dui neque, dictum sit
-          amet metus vel,
-          feugiat congue velit. Nulla viverra molestie malesuada. Donec egestas tincidunt lectus id pharetra.
-          Pellentesque a tristique augue Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dui neque,
-          dictum sit
-          amet metus vel,
-          feugiat congue velit. Nulla viverra molestie malesuada. Donec egestas tincidunt lectus id pharetra.
-          Pellentesque a tristique</p>
-      </div>
-    </div>
+  </nav>
 
-
-    <div class="wrapper">
-      <div><span class="dot"></span></div>
-      <div><span class="dot"></span></div>
-
-      <!-- <div><span class="dot"></span></div>
-      <div><span class="dot"></span></div>
-      <div><span class="dot"></span></div>
-      <div><span class="dot"></span></div>
-      <div><span class="dot"></span></div>
-      <div><span class="dot"></span></div>
-      <div><span class="dot"></span></div>
-      <div><span class="dot"></span></div>
-      <div><span class="dot"></span></div>
-      <div><span class="dot"></span></div>
-      <div><span class="dot"></span></div>
-      <div><span class="dot"></span></div>
-      <div><span class="dot"></span></div>
-      <div><span class="dot"></span></div> -->
-    </div>
-
-
-  </section>
-  <section id="activity" class="activity">
-    <h2>Activity</h2>
-    <div class="activity__cards-wrapper">
-      <div class="activity__card">
-        <i class="fa-solid fa-list-check"></i>
-        <h3>Requirements</h3>
-        <p>information is already filled in and you have to sign in to a different account</p>
-      </div>
-      <div class="activity__card">
-        <i class="fa-solid fa-music"></i>
-        <h3>Form</h3>
-        <p>Lorem ipsum dolor sit amet, molestie malesuada. Donec egestas tincidunt lectus id pharetra.
-          Pellentesque a tristique augue, vitae mollis sem. Integer eget nisi ac diam fermentum condimentum.</p>
-      </div>
-      <div class="activity__card">
-        <i class="fa-regular fa-thumbs-up"></i>
-        <h3>Goal</h3>
-        <p>feugiat congue velit. Nulla viverra molestie malesuada. Donec egestas tincidunt lectus id pharetra.
-          Pellentesque a tristique augue, vitae mollis sem. Integer eget nisi ac diam fermentum condimentum.</p>
-      </div>
-    </div>
-  </section>
-  <section id="portfolio" class="portfolio">
-    <h2>Portfolio</h2>
-    <div class="portfolio__cards-wrapper">
-      <div class="portfolio__card">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
+  <div data-bs-spy="scroll" data-bs-target="#navbar">
+    <section id="home" class="home">
+      <div class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="1500">
+            <img src="./assets/images/home/armen-aydinyan-bhJfx7t4QUA-unsplash.jpg" class="d-block w-100" alt="...">
           </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="./assets/images/home/armen-aydinyan-bhJfx7t4QUA-unsplash.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/images/home/michael-lee-5Z9bgfRZLLE-unsplash.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/images/home/raden-prasetya-EvjmSg1xurI-unsplash.jpg" class="d-block w-100" alt="...">
-            </div>
+          <div class="carousel-item" data-bs-interval="1500">
+            <img src="./assets/images/home/michael-lee-5Z9bgfRZLLE-unsplash.jpg" class="d-block w-100" alt="...">
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+          <div class="carousel-item" data-bs-interval="1500">
+            <img src="./assets/images/home/raden-prasetya-EvjmSg1xurI-unsplash.jpg" class="d-block w-100" alt="...">
+          </div>
         </div>
-        <h5>Certificates</h5>
-      </div>
-      <div class="portfolio__card">
-        <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="true">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
+        <div class="mask">
+          <h1 class="top-heading">Welcome to Join Awesome Lady Model Team</h1>
+          <div class="slogan-container">
+            <p>Everyone can be a model...</p>
           </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="./assets/images/home/armen-aydinyan-bhJfx7t4QUA-unsplash.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/images/home/michael-lee-5Z9bgfRZLLE-unsplash.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/images/home/raden-prasetya-EvjmSg1xurI-unsplash.jpg" class="d-block w-100" alt="...">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+          <a id="more-info" class="more-info">More Info</a>
         </div>
-        <h5>Rehearsal</h5>
       </div>
-      <div class="portfolio__card">
-        <div id="carouselExampleIndicators3" class="carousel slide" data-bs-ride="true">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
+    </section>
+    <section id="about" class="section-container about">
+      <h2 class="second-heading">About Us</h2>
+      <div class="content-wrapper">
+        <div class="portrait">
+          <img class="portrait-img" src="./assets/images/about/portrait.png" alt="portrait image" width="260">
+          <div class="bg-circles">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
           </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="./assets/images/home/armen-aydinyan-bhJfx7t4QUA-unsplash.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/images/home/michael-lee-5Z9bgfRZLLE-unsplash.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/images/home/raden-prasetya-EvjmSg1xurI-unsplash.jpg" class="d-block w-100" alt="...">
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators3"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators3"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
         </div>
-        <h5>Performance</h5>
+        <div class="about-text">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dui neque, dictum sit
+            amet metus vel,
+            feugiat congue velit. Nulla viverra molestie malesuada. Donec egestas tincidunt lectus id pharetra.
+            Pellentesque a tristique augue Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dui
+            neque,</p>
+        </div>
       </div>
-    </div>
-  </section>
-  <footer id="contact" class="contact">
-    <div class="map"><iframe width="100%" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=boyd%20nundah%20+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a
-          href="https://www.maps.ie/distance-area-calculator.html">distance maps</a></iframe></div>
-    <div class="contact__info">
-      <h3>Contact</h3>
-      <p>Boyd Rd, Nundah QLD 4012 </p>
-      <p>buuwlk@163.com</p>
-      <div><i class="fa-brands fa-weixin"></i>
-        <img src="./assets/images/contact/WechatIMG1.jpeg" width="100" alt="scan code">
+    </section>
+    <section id="activity" class="section-container activity">
+      <h2 class="second-heading">Activity</h2>
+      <div class="cards-wrapper">
+        <div class="activity-card base-card">
+          <i class="activity-card-icon fa-solid fa-list-check "></i>
+          <h3 class="third-heading">Requirements</h3>
+          <p>information is already filled in and you have to sign in to a different account</p>
+        </div>
+        <div class="activity-card base-card">
+          <i class="fa-solid fa-music activity-card-icon"></i>
+          <h3 class="third-heading">Form</h3>
+          <p>Lorem ipsum dolor sit amet, molestie malesuada. Donec egestas tincidunt lectus id pharetra.
+            Pellentesque a tristique augue, vitae mollis sem. Integer eget nisi ac diam fermentum condimentum.</p>
+        </div>
+        <div class="activity-card base-card">
+          <i class="fa-regular fa-thumbs-up activity-card-icon"></i>
+          <h3 class="third-heading">Goals</h3>
+          <p>feugiat congue velit. Nulla viverra molestie malesuada. Donec egestas tincidunt lectus id pharetra.
+            Pellentesque a tristique augue, vitae mollis sem. Integer eget nisi ac diam fermentum condimentum.</p>
+        </div>
       </div>
-    </div>
-
-  </footer>
-
-
-  <button id="myBtn" class="myBtn" title="Go to top">Top</button>
+    </section>
+    <section id="portfolio" class="section-container portfolio">
+      <h2 class="second-heading">Portfolio</h2>
+      <div class="cards-wrapper">
+        <div class="slide-card base-card">
+          <div id="certificate-carousel-indicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#certificate-carousel-indicators" data-bs-slide-to="0"
+                class="active" aria-current="true" aria-label="Slide a"></button>
+              <button type="button" data-bs-target="#certificate-carousel-indicators" data-bs-slide-to="1"
+                aria-label="Slide b"></button>
+              <button type="button" data-bs-target="#certificate-carousel-indicators" data-bs-slide-to="2"
+                aria-label="Slide c"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="slide-card-img" src="./assets/images/home/armen-aydinyan-bhJfx7t4QUA-unsplash.jpg"
+                  class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img class="slide-card-img" src="./assets/images/home/michael-lee-5Z9bgfRZLLE-unsplash.jpg"
+                  class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img class="slide-card-img" src="./assets/images/home/raden-prasetya-EvjmSg1xurI-unsplash.jpg"
+                  class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#certificate-carousel-indicators"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#certificate-carousel-indicators"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <h5 class="slide-card-subtitle">Certificates</h5>
+        </div>
+        <div class="slide-card base-card">
+          <div id="rehearsal-carousel-indicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#rehearsal-carousel-indicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#rehearsal-carousel-indicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#rehearsal-carousel-indicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="slide-card-img" src="./assets/images/home/armen-aydinyan-bhJfx7t4QUA-unsplash.jpg"
+                  class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img class="slide-card-img" src="./assets/images/home/michael-lee-5Z9bgfRZLLE-unsplash.jpg"
+                  class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img class="slide-card-img" src="./assets/images/home/raden-prasetya-EvjmSg1xurI-unsplash.jpg"
+                  class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#rehearsal-carousel-indicators"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#rehearsal-carousel-indicators"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <h5 class="slide-card-subtitle">Rehearsal</h5>
+        </div>
+        <div class="slide-card base-card">
+          <div id="performance-carousel-indicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#performance-carousel-indicators" data-bs-slide-to="0"
+                class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#performance-carousel-indicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#performance-carousel-indicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="slide-card-img" src="./assets/images/home/armen-aydinyan-bhJfx7t4QUA-unsplash.jpg"
+                  class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img class="slide-card-img" src="./assets/images/home/michael-lee-5Z9bgfRZLLE-unsplash.jpg"
+                  class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img class="slide-card-img" src="./assets/images/home/raden-prasetya-EvjmSg1xurI-unsplash.jpg"
+                  class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#performance-carousel-indicators"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#performance-carousel-indicators"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <h5 class="slide-card-subtitle">Performance</h5>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <h2 class="second-heading">Contact</h2>
+      <div class="content-wrapper contact-content-wrapper">
+        <iframe class="map" width="280" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+          src="https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=brisbane+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+          <a href="https://www.maps.ie/distance-area-calculator.html">distance maps
+          </a>
+        </iframe>
+        <div class="contact-info">
+          <p>Metro North, Brisbane, Queensland, 4012 </p>
+          <p>+61 4xx xxx xxx (available upon request) </p>
+          <p>buuwlk@163.com</p>
+          <p>WeChat group QR code</p>
+          <img src="./assets/images/contact/WechatIMG1.jpeg" width="100" alt="QR code">
+        </div>
+      </div>
+    </section>
+  </div>
+  <button id="top-btn" class="top-btn">
+    <i class="fa-solid fa-angles-up"></i>
+    <p>Top</p>
+  </button>
 
 </body>
 

@@ -1,0 +1,19 @@
+.about {
+  min-height: 540px;
+}
+
+.portrait {
+  position: relative;
+}
+
+.about-text {
+  @include center-vertical;
+  margin: 40px;
+  max-width: 500px;
+}
+
+.portrait-img {
+  background-color: $off-white;
+  box-shadow: $box-shadow;
+  border-radius: 20px;
+}
