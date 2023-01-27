@@ -30,6 +30,11 @@
 }
 
 @media screen and (max-width: 400px) {
+  html,
+  body {
+    overflow-x: hidden !important;
+    width: 100vw !important;
+  }
   .top-heading {
     font-size: 20px;
   }
