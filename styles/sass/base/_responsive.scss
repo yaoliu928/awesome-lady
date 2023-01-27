@@ -30,6 +30,7 @@
 }
 
 @media screen and (max-width: 400px) {
+  // fix horizontal scroll bar
   html,
   body {
     overflow-x: hidden !important;

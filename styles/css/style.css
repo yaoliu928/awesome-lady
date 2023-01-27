@@ -309,14 +309,13 @@
 .top-btn p {
   margin: 0;
 }
-
-.top-btn.top-btn-active {
-  display: block;
-}
-
 .top-btn:hover {
   cursor: pointer;
   background: linear-gradient(to bottom right, #f32451, #c31fba);
+}
+
+.top-btn.top-btn-active {
+  display: block;
 }
 
 @media screen and (max-width: 1000px) {

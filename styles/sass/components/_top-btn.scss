@@ -14,13 +14,12 @@
   p {
     margin: 0;
   }
+  &:hover {
+    @include pointer;
+    @include bg-gradient($theme-pink, $theme-velvet);
+  }
 }
 
 .top-btn.top-btn-active {
   display: block;
-}
-
-.top-btn:hover {
-  @include pointer;
-  @include bg-gradient($theme-pink, $theme-velvet);
 }
