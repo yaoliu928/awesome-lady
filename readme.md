@@ -1,10 +1,10 @@
 #### Source Code
 
-https://github.com/yaoliu928/jr18-p1
+https://github.com/yaoliu928/awesome-lady
 
 #### Deploy Link
 
-https://yaoliu928.github.io/jr18-p1
+https://yaoliu928.github.io/awesome-lady
 
 #### Skill Stack
 
