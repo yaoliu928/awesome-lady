@@ -36,3 +36,10 @@
   border-radius: 10px;
   max-width: 300px;
 }
+
+.list {
+  padding-left: 16px;
+  &-style {
+    list-style-type: square;
+  }
+}

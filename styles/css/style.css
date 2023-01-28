@@ -39,18 +39,25 @@
   max-width: 300px;
 }
 
+.list {
+  padding-left: 16px;
+}
+.list-style {
+  list-style-type: square;
+}
+
 .about {
-  min-height: 540px;
+  min-height: 810px;
 }
 
 .portrait {
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .about-text {
-  display: flex;
-  align-items: center;
-  margin: 40px;
+  margin: 0 80px;
   max-width: 500px;
 }
 
@@ -136,7 +143,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(111, 13, 13, 0.65);
+  background: rgba(111, 13, 13, 0.75);
   z-index: 1;
   flex-direction: column;
 }
@@ -334,6 +341,10 @@
   .content-wrapper {
     flex-direction: column;
     align-items: center;
+  }
+
+  .about-text {
+    margin: 40px 10px;
   }
 
   .slide-card {
