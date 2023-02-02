@@ -4,7 +4,7 @@
   bottom: 30px;
   right: 30px;
   z-index: 99;
-  @include bg-gradient($theme-pink-light, $theme-velvet-light);
+  @include bg-gradient($theme-pink-light, $theme-violet-light);
   color: $white;
   outline: none;
   border: none;
@@ -16,7 +16,7 @@
   }
   &:hover {
     @include pointer;
-    @include bg-gradient($theme-pink, $theme-velvet);
+    @include bg-gradient($theme-pink, $theme-violet);
   }
 }
 
